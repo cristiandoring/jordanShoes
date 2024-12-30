@@ -10,3 +10,8 @@
 body {
   font-family: "Archivo", sans-serif;
 }
+
+#background{
+    background-image: url('image/image-michael-jordan.png');
+    color: white;
+}
