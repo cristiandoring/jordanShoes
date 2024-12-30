@@ -5,13 +5,131 @@
   --dark: #121214;
   --gray: #f3f7ff;
   --white: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
 body {
   font-family: "Archivo", sans-serif;
+  overflow-x:hidden
+
 }
 
-#background{
+header{
+    width: 100vw;
+    
+}
+header > p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -9rem;
+    
+}
+#background-img{
     background-image: url('image/image-michael-jordan.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#background{
     color: white;
+    padding: 2rem 4rem;
+    width: 50%;
+}
+
+.infos{
+    max-width: 1216px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 5rem
+}
+
+.text-infos{
+    text-align: center;
+    width:45rem;
+    margin-bottom: 2rem;
+}
+
+.text-infos > h3{
+    font-size: 2rem;
+
+}
+
+.text-infos > p{
+    font-size: 1.3rem;
+}
+#shoes{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    width: 100vw;
+
+
+    
+}
+
+.shoeItem{
+    background-color: #f3f7ff;
+    width: 20rem;
+    height: 20rem;
+    padding: 1.8rem;
+    margin: -1.5rem;
+    font-size: 1.3rem;
+
+}
+
+.shoeItem:hover{
+    cursor: pointer;
+}
+
+.shoeItem > img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.nameShoe{
+    white-space: nowrap;
+    max-width: calc(20rem - 1.8rem);
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    
+}
+.category{
+    color: #7ca2f4;
+    
+}
+.price{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer{
+    width: 100vw;
+    height: 8rem;
+    background-color: #121214;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
 }
